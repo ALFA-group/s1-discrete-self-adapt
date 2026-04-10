@@ -1,0 +1,36 @@
+game: defendit
+shared_config: 
+  num_resources: 10
+  num_rounds: 40
+
+  res_value: 14
+  res_cost: 14
+
+  def_budgets: 
+    - 28
+    - 280
+    - 2800
+  atk_budgets:
+    - 28
+    - 280
+    - 2800
+
+  inc_threshold: 32767
+
+  default_mut_thresh: 16
+  min_param: 1
+  max_param: 65535
+  adapt_mut_thresh: True
+
+  prob_large_dist_step: 655 # 1% of 65535
+  default_sdt: 1 # x/65535 probability
+  small_dist_max: 6
+  large_dist_max: 32767
+  adapt_sdt: True
+
+  generations: 40000
+  round_param_change_interval: 13333
+  checkpoint_interval: 10
+
+  rows: 20
+  cols: 25

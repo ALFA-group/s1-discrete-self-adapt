@@ -1,0 +1,31 @@
+game: non_spatial_defendit
+config:    
+  py_nonspatial:
+    num_resources: 10
+    num_rounds: 40
+
+    res_value: 14
+    res_cost: 14
+
+    def_budgets: 
+      - 28
+      - 280
+      - 2800
+    atk_budgets: 
+      - 28
+      - 280
+      - 2800
+
+    inc_threshold: 0.5
+
+    default_mut_thresh: 0.1
+    min_param: 0.001
+    adapt_mut_thresh: True
+
+    A: 1.05
+
+    generations: 40000
+    round_param_change_interval: 13333
+    checkpoint_interval: 10
+
+    pop_size: 500

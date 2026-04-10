@@ -1,0 +1,45 @@
+game: abs_dif_game
+config:
+  p25_p50_p75:
+    difs: 
+      - 16383
+      - 32767
+      - 49151
+
+  p25_p75_p25:
+    difs: 
+      - 16383
+      - 49151
+      - 16383
+
+  p75_p50_p25:
+    difs: 
+      - 49151
+      - 32767
+      - 16383
+
+shared_config:
+  num_rounds: 40
+
+  winning_value: 1
+  losing_value: 0
+
+  inc_threshold: 32767
+
+  default_mut_thresh: 16
+  min_param: 1
+  max_param: 65535
+  adapt_mut_thresh: True
+
+  prob_large_dist_step: 655 # 1% of 65535
+  default_sdt: 1 # x/MAX_INT probability
+  small_dist_max: 6
+  large_dist_max: 32767
+  adapt_sdt: True
+
+  generations: 300
+  round_param_change_interval: 100
+  checkpoint_interval: 10
+
+  rows: 192
+  cols: 176

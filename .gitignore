@@ -52,10 +52,15 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# pyenv
+.python-version
+
 # folders
+venv/
 S1Core/
 output/
 board_output/
+paper_runs/
 .vscode/
 .DS_Store
 __pycache__/
